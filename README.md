@@ -3,34 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fun GitHub README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      color: #666;
-    }
-    .emoji {
-      font-size: 24px;
-    }
-    .quote {
-      font-style: italic;
-      color: #999;
-    }
-    .code {
-      background-color: #f8f8f8;
-      padding: 10px;
-      border-radius: 5px;
-      font-family: monospace;
-    }
-  </style>
 </head>
 <body>
   <h1>Welcome to My GitHub Profile</h1>
