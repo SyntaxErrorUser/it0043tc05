@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Form</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: white;
+    color: black;
+  }
+</style>
+</head>
+<body>
+ 
+<form action="/submit-pokemon" method="post" enctype="multipart/form-data">
+  <label for="nationalDex">National Dex:</label><br>
+  <input type="number" id="nationalDex" name="nationalDex" min="0"><br>
+  
+  <label for="pokemonName">Pokemon Name:</label><br>
+  <input type="text" id="pokemonName" name="pokemonName"><br>
+  
+  <label>Generation:</label><br>
+  <input type="radio" id="gen1" name="generation" value="1">
+  <label for="gen1">Gen I</label>
+  
+  <input type="radio" id="gen2" name="generation" value="2">
+  <label for="gen2">Gen II</label>
+  
+  <input type="radio" id="gen3" name="generation" value="3">
+  <label for="gen3">Gen III</label>
+  
+  <input type="radio" id="gen4" name="generation" value="4">
+  <label for="gen4">Gen IV</label>
+  
+  <input type="radio" id="gen5" name="generation" value="5">
+  <label for="gen5">Gen V</label>
+  
+  <input type="radio" id="gen6" name="generation" value="6">
+  <label for="gen6">Gen VI</label>
+  
+  <input type="radio" id="gen7" name="generation" value="7">
+  <label for="gen7">Gen VII</label>
+  
+  <input type="radio" id="gen8" name="generation" value="8">
+  <label for="gen8">Gen VIII</label>
+  
+  <input type="radio" id="gen9" name="generation" value="9">
+  <label for="gen9">Gen IX</label><br>
+  
+  <label for="image">Image:</label><br>
+  <h2></h2>
+  <input type="file" id="image" name="image"><br>
+  <h2></h2>
+  
+  <label for="type1">Type 1:</label><br>
+  <input list="type1options" id = "type1" name="type1"><br>
+  <datalist id = "type1options">
+    <option value = "Fire">
+    <option value = "Water">
+    <option value = "Grass">
+    <option value = "Ice">
+  </datalist><br>
+  
+  <label for="type2">Type 2:</label><br>
+  <input list="type2options" id = "type2" name="type2"><br>
+  <datalist id = "type2options">
+    <option value = "Fire">
+    <option value = "Water">
+    <option value = "Grass">
+    <option value = "Ice">
+  </datalist><br>
+  
+  <label for="evolvesFrom">Evolves From:</label><br>
+  <input type="text" id="evolvesFrom" name="evolvesFrom"><br>
+  
+  <label for="evolvesTo">Evolves To:</label><br>
+  <input type="text" id="evolvesTo" name="evolvesTo"><br>
+  
+  <label for="nickname">Nickname:</label><br>
+  <input type="text" id="nickname" name="nickname"><br>
+  
+  <label for="birthday">Birthday:</label><br>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+</form>
+ 
+<h2></h2>
+
+<table>
+  <tr>
+    <th>National Dex</th>
+    <th>Generation</th>
+    <th>Pokémon Name</th>
+    <th>Image</th>
+    <th>Type 1</th>
+    <th>Type 2</th>
+    <th>Evolves From</th>
+    <th>Evolves To</th>
+    <th>Nickname</th>
+    <th>Birthday</th>
+  </tr>
+  <tr>
+    <td>000</td>
+    <td>Gen Z</td>
+    <td>Jose</td>
+    <td><img src = https://github.com/SyntaxErrorUser/it0043tc05/assets/114919306/cb15fd21-9267-4c22-af3d-6fab8622f786></td>
+    <td colspan="2" style="color:white; background-color: rgb(100, 156, 152);">Siya</td>
+    <td>Bata</td>
+    <td>Ama</td>
+    <td>Gab</td>
+    <td>03-19-2005</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Gen I</td>
+    <td>Charizard</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/3/38/0006Charizard.png/70px-0006Charizard.png></td>
+    <td style="color:white; background-color: red;">Fire</td>
+    <td style="color:white; background-color: lightblue;">Flying</td>
+    <td>Charmeleon</td>
+    <td>-</td>
+    <td>Hello</td>
+    <td>01-20-1996</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Gen I</td>
+    <td>Venusaur</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/6/6b/0003Venusaur.png/70px-0003Venusaur.png></td>
+    <td style="color:white; background-color: green;">Grass</td>
+    <td style="color:white; background-color: pink;">Poison</td>
+    <td>Ivysaur</td>
+    <td>-</td>
+    <td>Po</td>
+    <td>02-19-1997</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Gen I</td>
+    <td>Butterfree</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/5/55/0012Butterfree.png/70px-0012Butterfree.png></td>
+    <td style="color:white; background-color: green;">Bug</td>
+    <td style="color:white; background-color: lightblue;">Flying</td>
+    <td>Metapod</td>
+    <td>-</td>
+    <td>Kuya.</td>
+    <td>03-18-1998</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Gen I</td>
+    <td>Weedle</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/3/36/0013Weedle.png/70px-0013Weedle.png></td>
+    <td style="color:white; background-color: green;">Bug</td>
+    <td style="color:white; background-color: pink;">Poison</td>
+    <td>-</td>
+    <td>Kakuna</td>
+    <td>Order</td>
+    <td>04-17-1999</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Gen I</td>
+    <td>Bellsprout</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/6/66/0069Bellsprout.png/70px-0069Bellsprout.png></td>
+    <td style="color:white; background-color: green;">Grass</td>
+    <td style="color:white; background-color: lightblue;">Poison</td>
+    <td>-</td>
+    <td>Weepinbell</td>
+    <td>Ako</td>
+    <td>05-16-2000</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Gen I</td>
+    <td>Rattata</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/a/aa/0019Rattata.png/70px-0019Rattata.png></td>
+    <td colspan="2" style="color:white; background-color: lightgray;">Normal</td>
+    <td>-</td>
+    <td>Raticate</td>
+    <td>Coke</td>
+    <td>06-15-2001</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Gen I</td>
+    <td>Arbok</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/5/51/0024Arbok.png/70px-0024Arbok.png></td>
+    <td colspan="2" style="color:white; background-color: purple;">Poison</td>
+    <td>Ekans</td>
+    <td>-</td>
+    <td>Po</td>
+    <td>07-14-2002</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Gen I</td>
+    <td>Pikachu</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/4/4a/0025Pikachu.png/70px-0025Pikachu.png></td>
+    <td colspan="2" style="color:white; background-color: yellow;">Electric</td>
+    <td>Pichu</td>
+    <td>Raichu</td>
+    <td>Mismo?</td>
+    <td>08-13-2003</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Gen I</td>
+    <td>Psyduck</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/3/3f/0054Psyduck.png/70px-0054Psyduck.png></td>
+    <td colspan="2" style="color:white; background-color: blue;">Water</td>
+    <td>-</td>
+    <td>Golduck</td>
+    <td>Medyo</td>
+    <td>09-12-2004</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Gen I</td>
+    <td>Alakazam</td>
+    <td><img src = https://archives.bulbagarden.net/media/upload/thumb/b/bb/0065Alakazam.png/70px-0065Alakazam.png></td>
+    <td colspan="2" style="color:white; background-color: purple;">Psychic</td>
+    <td>Kadabra</td>
+    <td>-</td>
+    <td>Po</td>
+    <td>10-11-2005</td>
+  </tr>
+</table>
+
+</body>
+</html>
