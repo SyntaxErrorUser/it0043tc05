@@ -11,7 +11,7 @@
   <blockquote class="quote">"Code is like humor. When you have to explain it, it’s bad." - Cory House</blockquote>
   <p>Check out my latest project:</p>
   <div class="code">
-    <pre><code>[git clone https://github.com/yourusername/yourproject.git](https://syntaxerroruser.github.io/it0043tc05/thiam_tsa2.html)</code></pre>
+    <pre><code>https://syntaxerroruser.github.io/it0043tc05/thiam_tsa2.html</code></pre>
   </div>
 </body>
 </html>
