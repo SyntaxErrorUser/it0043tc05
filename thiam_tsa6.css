@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-section {
+    text-align: center;
+    padding: 20px;
+    background: url('minecraft-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 18px;
+}
+
+.header-section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 100px;
+    border-radius: 15px;
+}
+
+.about-section {
+    padding: 40px 20px;
+    background-color: gray;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 18px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-section h2, .mobs-section h2, .contact-section h2, .contact-section p {
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.mobs-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.mobs-section .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.mobs-section .grid-item {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    animation: fadeUp 1s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.mobs-section .grid-item p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mobs-section .grid-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.mobs-section .grid-item:nth-child(1) {
+    animation-delay: 0s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(2) {
+    animation-delay: 0.1s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(3) {
+    animation-delay: 0.2s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(4) {
+    animation-delay: 0.3s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(5) {
+    animation-delay: 0.4s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(6) {
+    animation-delay: 0.5s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(7) {
+    animation-delay: 0.6s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(8) {
+    animation-delay: 0.7s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.mobs-section .grid-item:nth-child(9) {
+    animation-delay: 0.8s;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-section {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-section {
+        max-height: 200px;
+    }
+
+    .header-section img {
+        max-height: 200px;
+    }
+    
+    .about-section, .mobs-section, .contact-section {
+        padding: 20px 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .mobs-section .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mobs-section .grid-item img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .header-section {
+        max-height: 150px;
+    }
+
+    .header-section img {
+        max-height: 150px;
+    }
+
+    .header-section h1 {
+        font-size: 24px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 16px;
+    }
+
+    .about-section, .mobs-section, .contact-section {
+        padding: 10px 5px;
+    }
+
+    .mobs-section .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mobs-section .grid-item img {
+        height: 100px;
+    }
+}
